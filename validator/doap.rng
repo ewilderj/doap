@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  RELAX NG Compact schema for an XML-friendly restricted DOAP
+  by Edd Dumbill <edd@usefulinc.com>
+  
+  All DOAP files validated by this schema are guaranteed DOAP-compliant
+  (the reverse is not necessarily true)
+-->
+<grammar xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" ns="http://usefulinc.com/ns/doap#" xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="rdf-resource">
+    <attribute name="rdf:resource"/>
+  </define>
+  <define name="xml-lang">
+    <attribute name="xml:lang"/>
+  </define>
+  <define name="literal">
+    <optional>
+      <ref name="xml-lang"/>
+    </optional>
+    <text/>
+  </define>
+  <define name="Person-element">
+    <element name="foaf:Person">
+      <interleave>
+        <element name="foaf:name">
+          <ref name="literal"/>
+        </element>
+        <oneOrMore>
+          <choice>
+            <element name="foaf:homepage">
+              <ref name="rdf-resource"/>
+            </element>
+            <element name="foaf:mbox">
+              <ref name="rdf-resource"/>
+            </element>
+            <element name="foaf:mbox_sha1sum">
+              <text/>
+            </element>
+          </choice>
+        </oneOrMore>
+        <zeroOrMore>
+          <element name="rdfs:seeAlso">
+            <ref name="rdf-resource"/>
+          </element>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+  <define name="cvs-repository">
+    <element name="CVSRepository">
+      <element name="anon-root">
+        <text/>
+      </element>
+      <element name="module">
+        <text/>
+      </element>
+      <optional>
+        <element name="browse">
+          <ref name="rdf-resource"/>
+        </element>
+      </optional>
+    </element>
+  </define>
+  <define name="svn-repository">
+    <element name="SVNRepository">
+      <element name="location">
+        <ref name="rdf-resource"/>
+      </element>
+      <optional>
+        <element name="browse">
+          <ref name="rdf-resource"/>
+        </element>
+      </optional>
+    </element>
+  </define>
+  <define name="bk-repository">
+    <element name="BKRepository">
+      <element name="location">
+        <ref name="rdf-resource"/>
+      </element>
+      <element name="module">
+        <text/>
+      </element>
+      <optional>
+        <element name="browse">
+          <ref name="rdf-resource"/>
+        </element>
+      </optional>
+    </element>
+  </define>
+  <define name="arch-repository">
+    <element name="ArchRepository">
+      <element name="location">
+        <ref name="rdf-resource"/>
+      </element>
+      <element name="module">
+        <text/>
+      </element>
+      <optional>
+        <element name="browse">
+          <ref name="rdf-resource"/>
+        </element>
+      </optional>
+    </element>
+  </define>
+  <define name="bzr-branch">
+    <element name="BazaarBranch">
+      <element name="location">
+        <ref name="rdf-resource"/>
+      </element>
+      <optional>
+        <element name="browse">
+          <ref name="rdf-resource"/>
+        </element>
+      </optional>
+    </element>
+  </define>
+  <define name="git-branch">
+    <element name="GitBranch">
+      <element name="location">
+        <ref name="rdf-resource"/>
+      </element>
+      <optional>
+        <element name="browse">
+          <ref name="rdf-resource"/>
+        </element>
+      </optional>
+    </element>
+  </define>
+  <define name="hg-repository">
+    <element name="HgRepository">
+      <element name="location">
+        <ref name="rdf-resource"/>
+      </element>
+      <optional>
+        <element name="browse">
+          <ref name="rdf-resource"/>
+        </element>
+      </optional>
+    </element>
+  </define>
+  <define name="darcs-repository">
+    <element name="DarcsRepository">
+      <element name="location">
+        <ref name="rdf-resource"/>
+      </element>
+      <optional>
+        <element name="browse">
+          <ref name="rdf-resource"/>
+        </element>
+      </optional>
+    </element>
+  </define>
+  <start>
+    <element name="Project">
+      <interleave>
+        <element name="name">
+          <ref name="literal"/>
+        </element>
+        <element name="homepage">
+          <ref name="rdf-resource"/>
+        </element>
+        <zeroOrMore>
+          <element name="old-homepage">
+            <ref name="rdf-resource"/>
+          </element>
+        </zeroOrMore>
+        <element name="created">
+          <text/>
+        </element>
+        <oneOrMore>
+          <element name="shortdesc">
+            <ref name="literal"/>
+          </element>
+        </oneOrMore>
+        <oneOrMore>
+          <element name="description">
+            <ref name="literal"/>
+          </element>
+        </oneOrMore>
+        <zeroOrMore>
+          <element name="mailing-list">
+            <ref name="rdf-resource"/>
+          </element>
+        </zeroOrMore>
+        <oneOrMore>
+          <element name="maintainer">
+            <ref name="Person-element"/>
+          </element>
+        </oneOrMore>
+        <zeroOrMore>
+          <element name="developer">
+            <ref name="Person-element"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="documenter">
+            <ref name="Person-element"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="translator">
+            <ref name="Person-element"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="tester">
+            <ref name="Person-element"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="helper">
+            <ref name="Person-element"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="category">
+            <ref name="rdf-resource"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="release">
+            <element name="Version">
+              <interleave>
+                <element name="name">
+                  <text/>
+                </element>
+                <element name="created">
+                  <text/>
+                </element>
+                <element name="revision">
+                  <text/>
+                </element>
+                <zeroOrMore>
+                  <element name="os">
+                    <text/>
+                  </element>
+                </zeroOrMore>
+                <zeroOrMore>
+                  <element name="platform">
+                    <text/>
+                  </element>
+                </zeroOrMore>
+              </interleave>
+            </element>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="license">
+            <ref name="rdf-resource"/>
+          </element>
+        </zeroOrMore>
+        <optional>
+          <element name="download-page">
+            <ref name="rdf-resource"/>
+          </element>
+        </optional>
+        <zeroOrMore>
+          <element name="download-mirror">
+            <ref name="rdf-resource"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="repository">
+            <choice>
+              <ref name="cvs-repository"/>
+              <ref name="svn-repository"/>
+              <ref name="bk-repository"/>
+              <ref name="arch-repository"/>
+              <ref name="bzr-branch"/>
+              <ref name="git-branch"/>
+              <ref name="hg-repository"/>
+              <ref name="darcs-repository"/>
+            </choice>
+          </element>
+        </zeroOrMore>
+        <optional>
+          <element name="bug-database">
+            <ref name="rdf-resource"/>
+          </element>
+        </optional>
+        <zeroOrMore>
+          <element name="screenshots">
+            <ref name="rdf-resource"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="wiki">
+            <ref name="rdf-resource"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="programming-language">
+            <text/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="os">
+            <text/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="platform">
+            <text/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="blog">
+            <ref name="rdf-resource"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="service-endpoint">
+            <ref name="rdf-resource"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="language">
+            <text/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="vendor">
+            <ref name="rdf-resource"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="audience">
+            <text/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="implements">
+            <element name="Specification">
+              <interleave>
+                <element name="name">
+                  <text/>
+                </element>
+                <element name="description">
+                  <text/>
+                </element>
+                <zeroOrMore>
+                  <element name="rdfs:seeAlso">
+                    <ref name="rdf-resource"/>
+                  </element>
+                </zeroOrMore>
+              </interleave>
+            </element>
+          </element>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </start>
+</grammar>

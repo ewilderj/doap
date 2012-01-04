@@ -1,0 +1,23 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:doap="http://usefulinc.com/ns/doap#"
+	xmlns="http://xmlns.com/foaf/0.1/"
+>
+<!--
+    This shows how a FOAF file can refer to a DOAP-described project
+    and link in the person described in the FOAF as its maintainer.
+    See also edd-dumbill-foaf-2.rdf for a more intuitive way of doing
+    this.
+-->
+
+<Person nodeID="edd">
+	<name>Edd Dumbill</name>
+	<mbox rdf:resource="mailto:edd@usefulinc.com" />
+</Person>
+
+<doap:Project>
+	<doap:homepage rdf:resource="http://usefulinc.com/doap" />
+	<doap:maintainer rdf:nodeID="edd" />
+</doap:Project>
+
+</rdf:RDF>

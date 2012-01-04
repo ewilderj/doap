@@ -1,0 +1,13 @@
+<?xml-stylesheet href="style.xsl"?>
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<License rdf:about="http://usefulinc.com/doap/licenses/asl10">
+		 <rdfs:label>Apache License 1.0</rdfs:label>
+		 <dc:title>Apache License, Version 1.0</dc:title>
+		 <rdfs:seeAlso rdf:resource="http://www.apache.org/licenses/LICENSE-1.0" />
+</License>
+
+</rdf:RDF>

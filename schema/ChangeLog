@@ -1,0 +1,39 @@
+2007-08-23  Edd Dumbill  <edd@usefulinc.com>
+
+	* doap.rdf: incorporated German translation from Heiko Ronsdorf
+	<heiko.ronsdorf@rwth-aachen.de>
+	Added Czech translation from Josef Petrák <josef.petrak@kyberie.cz>
+
+2005-11-05  Edd Dumbill  <edd@usefulinc.com>
+
+	* doap.rdf: add doap:file-release property, as popularised by
+	CodeZoo.  Points to the URI of an associated download.
+
+2005-07-12  Edd Dumbill  <edd@usefulinc.com>
+
+	* doap.rdf: remove doap:translator properties, and place them
+	in the DOAP-for-DOAP.
+	Add literal range for programming-language and os.
+	Add doap:old-homepage subPropertyOf foaf:homepage.
+
+2004-11-08  Edd Dumbill  <edd@usefulinc.com>
+
+	* doap.rdf: removed domain from description, shortdesc, created.
+	Added doap:homepage subPropertyOf foaf:homepage.
+	Corrected double punctuation.
+
+2004-11-01  Edd Dumbill <edd@usefulinc.com>
+
+	* doap.rdf: added Spanish translations from Jorge Santos.
+	added some missing domains of Project in
+	* doap.rdf: removed owl:imports of rdf-schema and owl
+
+2004-09-08  Edd Dumbill <edd@usefulinc.com>
+
+	* doap.rdf: added French translations from Vincent Tabard.
+
+2004-07-22  Edd Dumbill  <edd@usefulinc.com>
+
+	* doap.rdf: fixed rdfs:Property to be rdf:Property
+	fix from Benjamin Nowack to get the domain right for doap:module
+	

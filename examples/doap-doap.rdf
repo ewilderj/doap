@@ -1,0 +1,142 @@
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns="http://usefulinc.com/ns/doap#">
+
+	<name>DOAP</name>
+	<homepage rdf:resource="http://usefulinc.com/doap" />
+	<created>2004-05-04</created>
+	<shortdesc xml:lang="en">
+	  Tools and vocabulary for describing community-based
+	  software projects.
+	</shortdesc>
+	<shortdesc xml:lang="fr">
+	  Des outils et un vocabulaire pour décrire des projets
+	  communautaires de développement de logiciels. 
+	</shortdesc>
+	<shortdesc xml:lang="lv">
+	  Rīki un vārdnīca, lai aprakstītu kolektīvus programmatūras
+	  projektus.
+	</shortdesc>
+	<shortdesc xml:lang="ru">
+	  Инструменты и словарь для описания коллективных проектов разработки
+	  программного обеспечения.
+	</shortdesc>
+	<shortdesc xml:lang="de">
+	  Werkzeuge und Vokabular zur Beschreibung von verteilten
+	  Software-Projekten.
+	</shortdesc>
+	<shortdesc xml:lang="es">
+	  Vocabulario y herramientas para describir proyectos
+	  de software comunitarios.
+	</shortdesc>
+	<description xml:lang="en">
+	  DOAP (Description of a Project) is an RDF vocabulary and
+	  associated set of tools for describing community-based software
+	  projects.  It is intended to be an interchange vocabulary for
+	  software directory sites, and to allow the decentralized
+	  expression of involvement in a project.
+	</description>
+	<description xml:lang="fr">
+	  DOAP (Description of a Project/Description d'un projet) est un
+	  vocabulaire RDF et un jeu d'outils associés décrivant des
+	  projets communautaires de développement de logiciels. Il est
+	  conçu pour constituer un vocabulaire d'échange entre sites
+	  annuaires de logiciels et pour permettre la décentralisation des
+	  informations de participation à un projet.
+	</description>
+	<description xml:lang="lv">
+	  DOAP (Projekta apraksts = Description of a Project) ir RDF
+	  vārdnīca un to atbalstošo rīku kopums, kas domāti, lai
+	  aprakstītu kolektīvus programmatūras projektus. Tās nolūks ir
+	  kalpot par datu apmaiņas vārdnīcu programmatūras direktoriju
+	  serveriem un ļaut decentralizētā veidā izteikt dalību projektā.
+	</description>
+	<description xml:lang="ru">
+	  DOAP (Описание проекта = Description of a Project) - это схема
+	  RDF и набор инструментов для описания коллективных проектов
+	  разработки программного обеспечения. Она предназначена для
+	  использования в качестве схемы обмена данными между каталогами
+	  программного обеспечения и для децентрализированного выражения
+	  участвия в проектах.
+	</description>
+	<description xml:lang="de">
+	  DOAP (Description of a Project) ist ein RDF-Vokabular mit
+	  dazugehörigen Werkzeugen zur Beschreibung von verteilten
+	  Software-Projekten. Es ist als Austausch-Vokabular für
+	  Online-Software-Verzeichnisse gedacht und soll die dezentrale
+	  Angabe von Projekt-Beteiligungen ermöglichen.
+	</description>
+	<description xml:lang="es">
+	  DOAP (Description of a Project / Descripcin de un proyecto) es
+	  un vocabulario RDF y un conjunto de herramientas para describir
+	  proyectos de software comunitarios.  Apunta a ser un vocabulario
+	  de intercambio para directorios de proyectos de software, y para
+	  permitir descentralizar la forma de expresar el grado de
+	  involucramiento en un proyecto.
+	</description>
+
+	<mailing-list rdf:resource="http://lists.usefulinc.com/mailman/listinfo/doap-interest" />
+	<maintainer>
+		<foaf:Person>
+			<foaf:name>Edd Dumbill</foaf:name>
+			<foaf:homepage rdf:resource="http://usefulinc.com/edd" />
+		</foaf:Person>
+	</maintainer>
+
+	<translator>
+		<foaf:Person>
+			<foaf:name>Vincent Tabard</foaf:name>
+			<foaf:mbox rdf:resource="mailto:balbinus@bonjourlesmouettes.org" />
+			<rdfs:seeAlso rdf:resource="http://foaf.balbinus.net/" />
+		</foaf:Person>
+	</translator>
+
+	<translator>
+		<foaf:Person>
+			<foaf:name>Jorge Santos</foaf:name>
+			<foaf:mbox rdf:resource="mailto:jsf@ciencias.unam.mx" />
+		</foaf:Person>
+	</translator>
+
+	<translator>
+		<foaf:Person>
+			<foaf:name>Heiko Ronsdorf</foaf:name>
+			<foaf:mbox rdf:resource="mailto:heiko.ronsdorf@rwth-aachen.de" />
+		</foaf:Person>
+	</translator>
+
+	<translator>
+		<foaf:Person>
+			<foaf:name>Josef Petrák</foaf:name>
+			<foaf:mbox rdf:resource="mailto:josef.petrak@kyberie.cz" />
+		</foaf:Person>
+	</translator>
+
+	<!-- currently supported versions -->
+	<release>
+		<Version>
+			<name>unstable</name>
+			<created>2005-07-12</created>
+			<revision>0.1</revision>
+		</Version>
+	</release>
+
+	<!-- Freshmeat category:
+		Information Management :: Metadata/Semantic Models -->
+	<category rdf:resource="http://software.freshmeat.net/browse/1020/" />
+
+	<!-- OSDIR category:
+		All Platforms :: Information Management (XML) -->
+	<category rdf:resource="http://osdir.com/Downloads+index-req-viewsdownload-sid-201.phtml" />
+
+	<license rdf:resource="http://usefulinc.com/doap/licenses/GPL" />
+
+	<repository>
+		<SVNRepository>
+			<location rdf:resource="http://svn.usefulinc.com/svn/repos/trunk/doap/" />
+			<browse rdf:resource="http://svn.usefulinc.com/cgi-bin/viewcvs.cgi/trunk/doap/" />
+		</SVNRepository>
+	</repository>
+
+</Project>

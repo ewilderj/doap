@@ -1,0 +1,4 @@
+
+Given the URI of a DOAP file on the command line. the viewer app
+loads it and spits out an HTML rendering.  The DOAP must be valid
+first.

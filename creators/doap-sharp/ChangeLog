@@ -1,0 +1,8 @@
+2004-07-24  Niel Bornstein  <niel@bornstein.atlanta.ga.us>
+
+	* Initial commit of Doap library and DoapWriter utility
+
+2004-07-24  Edd Dumbill  <edd@usefulinc.com>
+
+	* Made repository for doap# tools.
+

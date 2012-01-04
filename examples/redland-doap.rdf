@@ -1,0 +1,102 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns="http://usefulinc.com/ns/doap#">
+
+<!--
+    Though it is recommended DOAP files start with Project as the document
+    element, they can be full fledged RDF files like this one is.  Just
+    don't expect the validator to work on them.  You are assumed to know
+    what you're doing if you do it like this :)
+-->
+
+<Project>
+	<name>Redland RDF Application Framework</name>
+	<homepage rdf:resource="http://www.redland.opensource.ac.uk/" />
+	<created>2000-06-21</created>
+	<shortdesc xml:lang="en">
+		A library for the Resource Description Framework (RDF) allowing
+		it parsed from XML, stored, queried and
+		manipulated.
+	</shortdesc>
+
+	<description xml:lang="en">
+		Redland is a library that provides a high-level interface for
+		the Resource Description Framework (RDF) allowing the RDF graph
+		to be parsed from XML, stored, queried and manipulated. Redland
+		implements each of the RDF concepts in its own class via an
+		object based API, reflected into the language APIs, currently
+		Java, Perl, PHP, Python, Ruby and Tcl. Several classes
+		providing functionality such as for parsers, storage are built
+		as modules that can be loaded at compile or run-time as
+		required.
+	</description>
+
+	<release>
+		<Version>
+			<name>stable</name>
+			<created>2004-02-24</created>
+			<revision>0.9.16</revision>
+		</Version>
+	</release>
+
+	<mailing-list rdf:resource="http://lists.usefulinc.com/mailman/listinfo/redland-dev" />
+	<mailing-list rdf:resource="http://lists.usefulinc.com/mailman/listinfo/redland-announce" />
+	<mailing-list rdf:resource="http://lists.usefulinc.com/mailman/listinfo/redland-commits" />
+
+	<download-page rdf:resource="http://www.redland.opensource.ac.uk/dist/" />
+	<download-mirror rdf:resource="http://sourceforge.net/projects/librdf/" />
+
+	<maintainer>
+		<foaf:Person>
+			<foaf:name>Dave Beckett</foaf:name>
+			<foaf:mbox_sha1sum>970987f991961f2553a1bf2574166fa29befbccb</foaf:mbox_sha1sum>
+			<rdfs:seeAlso rdf:resource="http://www.ilrt.bris.ac.uk/people/cmdjb/webwho.xrdf" />
+		</foaf:Person>
+	</maintainer>
+
+	<!-- Freshmeat category: Database Engines/Servers -->
+	<category rdf:resource="http://software.freshmeat.net/browse/67/" />
+	<!--   Internet :: WWW/HTTP :: Indexing/Search -->
+	<category rdf:resource="http://software.freshmeat.net/browse/93/" />
+	<!--  Software Development :: Libraries -->
+	<category rdf:resource="http://software.freshmeat.net/browse/809/" />
+	<!--  Software Development :: Libraries ::  Application Frameworks -->
+	<category rdf:resource="http://software.freshmeat.net/browse/810/" />
+	<!--  Text Processing :: Markup :: XML -->
+	<category rdf:resource="http://software.freshmeat.net/browse/868/" />
+
+	<!-- Sourceforge category: -->
+	<category rdf:resource="http://sourceforge.net/softwaremap/trove_list.php?form_cat=237" />
+
+	<!-- Licensing details -->
+	<license rdf:resource="http://usefulinc.com/doap/licenses/gpl" />
+	<license rdf:resource="http://usefulinc.com/doap/licenses/lgpl" />
+	<license rdf:resource="http://usefulinc.com/doap/licenses/mpl" />
+
+	<!-- source repository -->
+	<repository>
+		<CVSRepository>
+			<anon-root>:pserver:anonymous@cvs.ilrt.org:2401/cvsroot</anon-root>
+			<module>redland</module>
+			<browse rdf:resource="http://cvs.ilrt.org/cvsweb/redland/librdf/" />
+		</CVSRepository>
+	</repository>
+
+</Project>
+
+<!--
+     optional administravia:
+     authoring tools can add more here if they'd like.
+ -->
+<rdf:Description rdf:about="">
+	<foaf:maker>
+		<foaf:Person>
+			<foaf:name>Edd Dumbill</foaf:name>
+			<foaf:mbox rdf:resource="mailto:edd@usefulinc.com" />
+		</foaf:Person>
+	</foaf:maker>
+</rdf:Description>
+
+
+</rdf:RDF>

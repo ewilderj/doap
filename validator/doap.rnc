@@ -1,0 +1,124 @@
+# RELAX NG Compact schema for an XML-friendly restricted DOAP
+# by Edd Dumbill <edd@usefulinc.com>
+#
+# All DOAP files validated by this schema are guaranteed DOAP-compliant
+# (the reverse is not necessarily true)
+
+default namespace = "http://usefulinc.com/ns/doap#"
+namespace foaf = "http://xmlns.com/foaf/0.1/"
+namespace rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+namespace rdfs = "http://www.w3.org/2000/01/rdf-schema#"
+
+grammar {
+
+rdf-resource = attribute rdf:resource { text }
+xml-lang = attribute xml:lang { text }
+literal = xml-lang?, text
+
+Person-element = element foaf:Person {
+   element foaf:name { literal }
+ & (
+    element foaf:homepage { rdf-resource } |
+    element foaf:mbox { rdf-resource } |
+    element foaf:mbox_sha1sum { text }
+ )+&
+   element rdfs:seeAlso { rdf-resource}*
+}
+
+cvs-repository = element CVSRepository {
+   element anon-root { text },
+   element module { text },
+   element browse { rdf-resource}?
+}
+
+svn-repository = element SVNRepository {
+   element location { rdf-resource },
+   element browse { rdf-resource}?
+}
+
+bk-repository = element BKRepository {
+   element location { rdf-resource },
+   element module { text },
+   element browse { rdf-resource}?
+}
+
+arch-repository = element ArchRepository {
+   element location { rdf-resource },
+   element module { text },
+   element browse { rdf-resource}?
+}
+
+bzr-branch = element BazaarBranch {
+   element location { rdf-resource },
+   element browse { rdf-resource}?
+}
+
+git-branch = element GitBranch {
+   element location { rdf-resource },
+   element browse { rdf-resource}?
+}
+
+hg-repository = element HgRepository {
+   element location { rdf-resource },
+   element browse { rdf-resource}?
+}
+darcs-repository = element DarcsRepository {
+   element location { rdf-resource },
+   element browse { rdf-resource}?
+}
+
+start = element Project
+   {
+      element name { literal }&
+      element homepage { rdf-resource }&
+      element old-homepage { rdf-resource }*&
+      element created { text }&
+      element shortdesc { literal }+&
+      element description { literal }+&
+      element mailing-list { rdf-resource }*&
+      
+      element maintainer { Person-element }+&
+      element developer { Person-element }*&
+      element documenter { Person-element }*&
+      element translator { Person-element }*&
+      element tester { Person-element }*&
+      element helper { Person-element }*&
+      
+      element category { rdf-resource }*&
+      element release {
+         element Version {
+            element name { text }&
+            element created { text }&
+            element revision { text }&
+            element os { text }*&
+            element platform { text }*
+         }
+      }*&
+      element license { rdf-resource }*&
+      element download-page { rdf-resource }?&
+      element download-mirror { rdf-resource }*&
+      element repository { ( cvs-repository | svn-repository 
+       | bk-repository | arch-repository | bzr-branch 
+       | git-branch | hg-repository | darcs-repository ) }*&
+      element bug-database { rdf-resource }?&
+      element screenshots { rdf-resource }*&
+      element wiki { rdf-resource }*&
+      
+      element programming-language { text }*&
+      element os { text }*&
+      element platform { text }*&
+      element blog { rdf-resource }*&
+      element service-endpoint  { rdf-resource }*&
+      element language { text }*&
+      element vendor { rdf-resource }*&
+      element audience { text }*&
+      element implements {
+         element Specification {
+            element name { text }&
+            element description { text }&
+            element rdfs:seeAlso { rdf-resource}*
+         }
+      }*
+   }
+
+}

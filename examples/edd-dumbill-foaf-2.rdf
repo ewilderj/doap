@@ -1,0 +1,22 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:doap="http://usefulinc.com/ns/doap#"
+	xmlns="http://xmlns.com/foaf/0.1/"
+>
+
+<!--
+    This example shows how a FOAF file can use DOAP vocabulary
+    terms to make a reverse link into a DOAP-described project
+-->
+
+<Person nodeID="edd">
+	<name>Edd Dumbill</name>
+	<homepage rdf:resource="http://usefulinc.com/edd" />
+	<doap:maintainer-of>
+		<doap:Project>
+			<doap:homepage rdf:resource="http://usefulinc.com/doap" />
+		</doap:Project>
+	</doap:maintainer-of>
+</Person>
+
+</rdf:RDF>

@@ -1,0 +1,5 @@
+2004-07-14  Edd Dumbill <edd@usefulinc.com>
+
+	* added doap.rnc RELAX NG compact schema.
+	* Makefile: build rng XML schema from rnc one.
+	* XmlTests.cs: add RelaxNG validation step.

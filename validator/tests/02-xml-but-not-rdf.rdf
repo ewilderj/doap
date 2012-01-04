@@ -1,0 +1,31 @@
+<Project xmlns="http://usefulinc.com/ns/doap#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+	<!-- This is almost the simplest DOAP file that can exist. -->
+
+	<name>DOAP</name>
+	<homepage rdf:resource="http://usefulinc.com/doap" />
+	<created>2004-05-04</created>
+	<shortdesc xml:lang="en">
+		Tools and vocabulary for describing community-based
+		software projects.
+	</shortdesc>
+	<description xml:lang="en">
+		DOAP (Description of a Project) is an RDF vocabulary and
+		associated set of tools for describing community-based software
+		projects.  It is intended to be an interchange vocabulary for
+		software directory sites, and to allow the decentralized
+		expression of involvement in a project.
+	</description>
+	<maintainer>
+		<foaf:Person>
+			<foaf:name>Edd Dumbill</foaf:name>
+			<foaf:homepage rdf:resource="http://usefulinc.com/edd" />
+		</foaf:Person>
+		<foaf:Person>
+			<foaf:name>Edd Dumbill</foaf:name>
+			<foaf:homepage rdf:resource="http://usefulinc.com/edd" />
+		</foaf:Person>
+	</maintainer>
+</Project>

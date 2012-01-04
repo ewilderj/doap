@@ -1,0 +1,42 @@
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns="http://usefulinc.com/ns/doap#">
+
+	<name>GNOME Bluetooth Subsystem</name>
+	<homepage rdf:resource="http://usefulinc.com/software/gnome-bluetooth" />
+	<created>2002-11-11</created>
+
+	<shortdesc xml:lang="en">
+        Support for Bluetooth devices on the GNOME desktop.
+	</shortdesc>
+
+	<description xml:lang="en">
+        The GNOME Bluetooth Subsystem is a suite of applications and a
+        developer platform for managing Bluetooth devices from the
+        GNOME desktop.
+	</description>
+
+	<mailing-list rdf:resource="http://lists.usefulinc.com/mailman/listinfo/gnome-bluetooth/" />
+
+	<maintainer>
+		<foaf:Person>
+			<foaf:name>Edd Dumbill</foaf:name>
+			<foaf:homepage rdf:resource="http://usefulinc.com/edd" />
+		</foaf:Person>
+	</maintainer>
+
+	<release>
+		<Version>
+			<name>unstable</name>
+			<created>2003-06-07</created>
+			<revision>0.4.1</revision>
+		</Version>
+	</release>
+
+	<license rdf:resource="http://usefulinc.com/doap/licenses/gpl" />
+
+    <bug-database rdf:resource="http://bugzilla.gnome.org/" />
+
+    <screenshots rdf:resource="http://usefulinc.com/software/gnome-bluetooth/#shots" />
+
+</Project>

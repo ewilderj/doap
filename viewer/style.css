@@ -1,0 +1,32 @@
+
+h1, h2, h3 {
+ font-family: sans;
+}
+
+.person {
+  display: table-row;
+}
+
+.pname {
+  display: table-cell;
+}
+
+.role {
+  display: table-cell;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.link {
+  display: table-row;
+}
+
+.label {
+  display: table-cell;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.resource {
+  display: table-cell;
+}
