@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -130,7 +131,7 @@
 		All Platforms :: Information Management (XML) -->
 	<category rdf:resource="http://osdir.com/Downloads+index-req-viewsdownload-sid-201.phtml" />
 
-	<license rdf:resource="http://usefulinc.com/doap/licenses/GPL" />
+	<license rdf:resource="http://spdx.org/licenses/GPL-2.0+" />
 
 	<repository>
 		<SVNRepository>
