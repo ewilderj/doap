@@ -133,10 +133,10 @@
 	<license rdf:resource="http://usefulinc.com/doap/licenses/GPL" />
 
 	<repository>
-		<SVNRepository>
-			<location rdf:resource="http://svn.usefulinc.com/svn/repos/trunk/doap/" />
-			<browse rdf:resource="http://svn.usefulinc.com/cgi-bin/viewcvs.cgi/trunk/doap/" />
-		</SVNRepository>
+		<GitRepository>
+			<location rdf:resource="https://github.com/edumbill/doap.git"/>
+			<browse rdf:resource="https://github.com/edumbill/doap/"/>
+		</GitRepository>
 	</repository>
 
 </Project>
