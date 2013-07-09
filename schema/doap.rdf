@@ -347,10 +347,10 @@
 	<rdfs:label xml:lang="es">licencia</rdfs:label>
 	<rdfs:label xml:lang="de">Lizenz</rdfs:label>
         <rdfs:label xml:lang="cs">licence</rdfs:label>
-	<rdfs:comment xml:lang="en">The URI of an RDF description of the license the software is distributed under. E.g. a SPDX reference</rdfs:comment>
+	<rdfs:comment xml:lang="en">The URI of an RDF description of the license the software is distributed under.</rdfs:comment>
 	<rdfs:comment xml:lang="fr">L'URI d'une description RDF de la licence sous laquelle le programme est distribué.</rdfs:comment>
 	<rdfs:comment xml:lang="es">El URI de una descripción RDF de la licencia bajo la cuál se distribuye el software.</rdfs:comment>
-	<rdfs:comment xml:lang="de">Die URI einer RDF-Beschreibung einer Lizenz unter der die Software herausgegeben wird. z.B. eine SPDX Referenz</rdfs:comment>
+	<rdfs:comment xml:lang="de">Die URI einer RDF-Beschreibung einer Lizenz unter der die Software herausgegeben wird.</rdfs:comment>
         <rdfs:comment xml:lang="cs">URI adresa RDF popisu licence, pod kterou je software distribuován.</rdfs:comment>
 </rdf:Property>
 

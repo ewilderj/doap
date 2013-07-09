@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns="http://usefulinc.com/ns/doap#">
@@ -34,7 +33,7 @@
 		</Version>
 	</release>
 
-	<license rdf:resource="http://spdx.org/licenses/GPL-2.0+" />
+	<license rdf:resource="http://usefulinc.com/doap/licenses/gpl" />
 
     <bug-database rdf:resource="http://bugzilla.gnome.org/" />
 

@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -71,9 +70,9 @@
 	<category rdf:resource="http://sourceforge.net/softwaremap/trove_list.php?form_cat=237" />
 
 	<!-- Licensing details -->
-	<license rdf:resource="http://spdx.org/licenses/GPL-2.0+" />
-	<license rdf:resource="http://spdx.org/licenses/LGPL-2.1+" />
-	<license rdf:resource="http://spdx.org/licenses/MPL-2.0" />
+	<license rdf:resource="http://usefulinc.com/doap/licenses/gpl" />
+	<license rdf:resource="http://usefulinc.com/doap/licenses/lgpl" />
+	<license rdf:resource="http://usefulinc.com/doap/licenses/mpl" />
 
 	<!-- source repository -->
 	<repository>
