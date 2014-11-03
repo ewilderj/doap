@@ -375,6 +375,14 @@
 	<rdfs:range rdf:resource="http://rdfs.org/sioc/ns#Container" />
 </rdf:Property>
 
+<rdf:Property rdf:about="http://usefulinc.com/ns/doap#developer-forum">
+	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
+	<rdfs:label xml:lang="en">developer forum</rdfs:label>
+	<rdfs:comment xml:lang="en">A forum or community for developers of this project.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://usefulinc.com/ns/doap#Project" />
+	<rdfs:range rdf:resource="http://rdfs.org/sioc/ns#Container" />
+</rdf:Property>
+
 
 <rdf:Property rdf:about="http://usefulinc.com/ns/doap#category">
 	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
