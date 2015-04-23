@@ -417,6 +417,7 @@
         <rdfs:comment xml:lang="pt">Repositório do código fonte.</rdfs:comment>
 	<rdfs:domain rdf:resource="http://usefulinc.com/ns/doap#Project" />
 	<rdfs:range rdf:resource="http://usefulinc.com/ns/doap#Repository" />
+	<owl:inverseOf rdf:resource="http://usefulinc.com/ns/doap#repositoryOf" />
 </rdf:Property>
 
 <rdf:Property rdf:about="http://usefulinc.com/ns/doap#repositoryOf">
@@ -425,6 +426,7 @@
 	<rdfs:comment xml:lang="en">The project that uses a repository.</rdfs:comment>
 	<rdfs:range rdf:resource="http://usefulinc.com/ns/doap#Project" />
 	<rdfs:domain rdf:resource="http://usefulinc.com/ns/doap#Repository" />
+	<owl:inverseOf rdf:resource="http://usefulinc.com/ns/doap#repository" />
 </rdf:Property>
 
 <rdf:Property rdf:about="http://usefulinc.com/ns/doap#anon-root">
