@@ -71,7 +71,7 @@
         <rdfs:label xml:lang="cs">Verze</rdfs:label>
         <rdfs:label xml:lang="pt">Versão</rdfs:label>
 	<rdfs:comment xml:lang="en">Version information of a project release.</rdfs:comment>
-	<rdfs:comment xml:lang="fr">Détails sur une version d'une realease d'un projet.</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Détails sur une version d'une release d'un projet.</rdfs:comment>
 	<rdfs:comment xml:lang="es">Información sobre la versión de un release del proyecto.</rdfs:comment>
 	<rdfs:comment xml:lang="de">Versionsinformation eines Projekt Releases.</rdfs:comment>
         <rdfs:comment xml:lang="cs">Informace o uvolněné verzi projektu.</rdfs:comment>
