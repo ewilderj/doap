@@ -49,7 +49,7 @@
 	<rdfs:label xml:lang="en">Project</rdfs:label>
 	<rdfs:label xml:lang="fr">Projet</rdfs:label>
 	<rdfs:label xml:lang="es">Proyecto</rdfs:label>
-	<rdfs:label xml:lang="de">Prijekt</rdfs:label>
+	<rdfs:label xml:lang="de">Projekt</rdfs:label>
         <rdfs:label xml:lang="cs">Projekt</rdfs:label>
         <rdfs:label xml:lang="pt">Projeto</rdfs:label>
 	<rdfs:comment xml:lang="en">A project.</rdfs:comment>
