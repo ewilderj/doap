@@ -29,13 +29,13 @@
 	<dc:description xml:lang="de">Das Vokabular "Description of a Project (DOAP)", beschrieben durch W3C RDF Schema and the Web Ontology Language.</dc:description>
 	<dc:description xml:lang="cs">Slovník Description of a Project (DOAP, Popis projektu), popsaný použitím W3C RDF Schema a Web Ontology Language.</dc:description>
 	<dc:description xml:lang="pt">Vocabulário de descrição de um Projeto (DOAP - Description of a Project), descrito no esquema (schema) W3C RDF e na Web Ontology Language.</dc:description>
-	<dc:creator>Edd Dumbill</dc:creator>
+	<dc:creator>Edd Wilder-James</dc:creator>
 	<dc:format>application/rdf+xml</dc:format>
-	<dc:rights>Copyright © 2004-2009 Edd Dumbill</dc:rights>
+	<dc:rights>Copyright © 2004-20017 Edd Dumbill, Edd Wilder-James</dc:rights>
 
 	<foaf:maker>
 		<foaf:Person>
-			<foaf:name>Edd Dumbill</foaf:name>
+			<foaf:name>Edd Wilder-James</foaf:name>
 			<foaf:mbox rdf:resource="mailto:edd@usefulinc.com" />
 		</foaf:Person>
 	</foaf:maker>
