@@ -1,3 +1,9 @@
+2017-08-09  Edd Wilder-James <https://github.com/ewilderj>
+
+	* doap.rdf: updated copyright message to include my new name!
+	* README.md: moved README to Markdown format, included new
+	maintainer details
+
 2007-08-23  Edd Dumbill  <edd@usefulinc.com>
 
 	* doap.rdf: incorporated German translation from Heiko Ronsdorf
