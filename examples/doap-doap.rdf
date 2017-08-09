@@ -80,8 +80,15 @@
 	<mailing-list rdf:resource="http://lists.usefulinc.com/mailman/listinfo/doap-interest" />
 	<maintainer>
 		<foaf:Person>
-			<foaf:name>Edd Dumbill</foaf:name>
-			<foaf:homepage rdf:resource="http://usefulinc.com/edd" />
+			<foaf:name>Edd Wilder-James</foaf:name>
+			<foaf:homepage rdf:resource="https://github.com/ewilderj/" />
+		</foaf:Person>
+	</maintainer>
+
+	<maintainer>
+		<foaf:Person>
+			<foaf:name>Kjetil Kjernsmo</foaf:name>
+			<foaf:homepage rdf:resource="https://github.com/kjetilk/" />
 		</foaf:Person>
 	</maintainer>
 
@@ -135,8 +142,8 @@
 
 	<repository>
 		<GitRepository>
-			<location rdf:resource="https://github.com/edumbill/doap.git"/>
-			<browse rdf:resource="https://github.com/edumbill/doap/"/>
+			<location rdf:resource="https://github.com/ewilderj/doap.git"/>
+			<browse rdf:resource="https://github.com/ewilderj/doap/"/>
 		</GitRepository>
 	</repository>
 
