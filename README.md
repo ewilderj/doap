@@ -12,3 +12,11 @@ Maintainers are:
 
 * Edd Wilder-James [ewilderj](https://github.com/ewilderj)
 * Kjetiol Kjernsmo [kjetilk](https://github.com/kjetilk)
+
+## Schema
+
+The live version of the schema is at the namespace URI,
+http://usefulinc.com/ns/doap
+
+It will be kept synchronized with the `master` branch in the Github
+repository.
