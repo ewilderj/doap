@@ -1,4 +1,7 @@
 ## DOAP Schema makefile
+# 
+# this is run on a post-receive hook when the deploy
+# remote origin is pushed to
 
 .PHONY: live all
 
