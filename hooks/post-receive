@@ -1,0 +1,103 @@
+#!/bin/bash
+#
+# Author: "FRITZ Thomas" <fritztho@gmail.com> (http://www.fritzthomas.com)
+# GitHub: https://gist.github.com/thomasfr/9691385
+#
+# The MIT License (MIT)
+#
+# Copyright (c) 2014-2017 FRITZ Thomas
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+
+
+# Application Name:
+export DEPLOY_APP_NAME=`whoami`
+
+# This is the root deploy dir.
+export DEPLOY_ROOT="${HOME}/doap-work"
+
+# When receiving a new git push, the received branch gets compared to this one.
+# If you do not need this, just add a comment
+export DEPLOY_ALLOWED_BRANCH="master"
+
+# You could use this to do a backup before updating to be able to do a quick rollback. 
+# If you need this just delete the comment and modify to your needs
+#PRE_UPDATE_CMD='cd ${DEPLOY_ROOT} && backup.sh'
+
+# Use this to do update tasks and maybe service restarts
+# If you need this just delete the comment and modify to your needs
+POST_UPDATE_CMD='cd ${DEPLOY_ROOT}/schema && make live'
+
+###########################################################################################
+
+export GIT_DIR="$(cd $(dirname $(dirname $0));pwd)"
+export GIT_WORK_TREE="${DEPLOY_ROOT}"
+IP="$(ip addr show eth0 | grep 'inet ' | cut -f2 | awk '{ print $2}')"
+
+echo "githook: $(date): Welcome to '$(hostname -f)' (${IP})"
+echo
+
+# Make sure directory exists. Maybe its deployed for the first time.
+mkdir -p "${DEPLOY_ROOT}"
+
+# Loop, because it is possible to push more than one branch at a time. (git push --all)
+while read oldrev newrev refname
+do
+
+    export DEPLOY_BRANCH=$(git rev-parse --symbolic --abbrev-ref $refname)
+    export DEPLOY_OLDREV="$oldrev"
+    export DEPLOY_NEWREV="$newrev"
+    export DEPLOY_REFNAME="$refname"
+
+    if [ "$DEPLOY_NEWREV" = "0000000000000000000000000000000000000000" ]; then
+        echo "githook: This ref has been deleted"
+        exit 1
+    fi    
+
+    if [ ! -z "${DEPLOY_ALLOWED_BRANCH}" ]; then
+        if [ "${DEPLOY_ALLOWED_BRANCH}" != "$DEPLOY_BRANCH" ]; then
+            echo "githook: Branch '$DEPLOY_BRANCH' of '${DEPLOY_APP_NAME}' application will not be deployed. Exiting."
+            exit 1
+        fi
+    fi
+
+    if [ ! -z "${PRE_UPDATE_CMD}" ]; then
+       echo
+       echo "githook: PRE UPDATE (CMD: '${PRE_UPDATE_CMD}'):"
+       eval $PRE_UPDATE_CMD || exit 1
+    fi
+
+    # Make sure GIT_DIR and GIT_WORK_TREE is correctly set and 'export'ed. Otherwhise
+    # these two environment variables could also be passed as parameters to the git cli
+    echo "githook: I will deploy '${DEPLOY_BRANCH}' branch of the '${DEPLOY_APP_NAME}' project to '${DEPLOY_ROOT}'"
+    git checkout -f "${DEPLOY_BRANCH}" || exit 1
+    git reset --hard "$DEPLOY_NEWREV" || exit 1
+
+    if [ ! -z "${POST_UPDATE_CMD}" ]; then
+       echo
+       echo "githook: POST UPDATE (CMD: '${POST_UPDATE_CMD}'):"
+       eval $POST_UPDATE_CMD || exit 1
+    fi
+
+done
+
+echo
+echo "githook: $(date): See you soon at '$(hostname -f)' (${IP})"
+exit 0
