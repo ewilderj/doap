@@ -19,4 +19,4 @@ The live version of the schema is at the namespace URI,
 http://usefulinc.com/ns/doap
 
 It will be kept synchronized with the `master` branch in the Github
-repository: publication is automatic on merge to that branch.
+repository.
