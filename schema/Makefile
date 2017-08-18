@@ -3,7 +3,9 @@
 # this is run on a post-receive hook when the deploy
 # remote origin is pushed to
 
-DIR:=$(PWD)/$({0%/*})
+# deploy won't work if there's spaces in the path... sorry
+
+DIR:=$(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
 .PHONY: live all
 
