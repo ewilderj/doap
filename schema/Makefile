@@ -14,3 +14,4 @@ all:
 
 live:
 	cp $(DIR)doap.rdf /home/edd/public_html/static/usefulinc.com/ns/doap
+	@echo "Published schema."
