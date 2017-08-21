@@ -382,6 +382,7 @@
 	<rdfs:comment xml:lang="cs">Domovská stránka nebo e–mailová adresa e–mailové diskuse.</rdfs:comment>
 	<rdfs:comment xml:lang="pt">Página web da lista de distribuição de e-mail ou dos endereços.</rdfs:comment>
 	<rdfs:domain rdf:resource="http://usefulinc.com/ns/doap#Project" />
+	<rdfs:range rdf:resource="http://rdfs.org/sioc/types#MailingList" />
 </rdf:Property>
 
 <rdf:Property rdf:about="http://usefulinc.com/ns/doap#support-forum">
@@ -619,6 +620,7 @@
 	<rdfs:comment xml:lang="cs">URL adresa wiki projektu pro společné diskuse.</rdfs:comment>
 	<rdfs:comment xml:lang="pt">URL da Wiki para discussão em grupo do projeto.</rdfs:comment>
 	<rdfs:domain rdf:resource="http://usefulinc.com/ns/doap#Project" />
+        <rdfs:range rdf:resource="http://rdfs.org/sioc/types#Wiki" />
 </rdf:Property>
 
 <rdf:Property rdf:about="http://usefulinc.com/ns/doap#bug-database">
@@ -868,6 +870,7 @@
 	<rdfs:comment xml:lang="pt">URI de um blog relacionado com um projeto</rdfs:comment>
 	<rdfs:domain rdf:resource="http://usefulinc.com/ns/doap#Project" />
 	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource" />
+        <rdfs:range rdf:resource="http://rdfs.org/sioc/types#Weblog" />
 </rdf:Property>
 
 </rdf:RDF>
