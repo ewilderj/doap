@@ -120,6 +120,23 @@
 	<rdfs:subClassOf rdf:resource="http://usefulinc.com/ns/doap#Repository" />
 </rdfs:Class>
 
+<rdfs:Class rdf:about="http://usefulinc.com/ns/doap#GitRepository">
+	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
+	<rdfs:label xml:lang="en">Git Repository</rdfs:label>
+	<rdfs:label xml:lang="fr">Dépôt Git</rdfs:label>
+	<rdfs:label xml:lang="es">Repositorio Git</rdfs:label>
+	<rdfs:label xml:lang="de">Git Repository</rdfs:label>
+	<rdfs:label xml:lang="cs">Úložiště Git</rdfs:label>
+	<rdfs:label xml:lang="pt">Repositório Git</rdfs:label>
+	<rdfs:comment xml:lang="en">Git source code repository.</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Dépôt Git du code source.</rdfs:comment>
+	<rdfs:comment xml:lang="es">Repositorio Git del código fuente.</rdfs:comment>
+	<rdfs:comment xml:lang="de">Git Quellcode-Versionierungssystem.</rdfs:comment>
+	<rdfs:comment xml:lang="cs">Úložiště zdrojových kódů Git.</rdfs:comment>
+	<rdfs:comment xml:lang="pt">Repositório Git do código fonte.</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="http://usefulinc.com/ns/doap#Repository" />
+</rdfs:Class>
+
 <rdfs:Class rdf:about="http://usefulinc.com/ns/doap#BKRepository">
 	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
 	<rdfs:label xml:lang="en">BitKeeper Repository</rdfs:label>
