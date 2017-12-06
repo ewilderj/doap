@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "doap:description": {
+      "@id": "doap:description",
+      "@container": "@language"
+    },
+    "doap:shortdesc": {
+      "@id": "doap:shortdesc",
+      "@container": "@language"
+    }
+  },
+  "@type": "doap:Project",
+  "doap:category": [
+    "http://software.freshmeat.net/browse/1020/",
+    "http://osdir.com/Downloads+index-req-viewsdownload-sid-201.phtml"
+  ],
+  "doap:created": "2004-05-04",
+  "doap:description": {
+    "de": "\n\t  DOAP (Description of a Project) ist ein RDF-Vokabular mit\n\t  dazugehörigen Werkzeugen zur Beschreibung von verteilten\n\t  Software-Projekten. Es ist als Austausch-Vokabular für\n\t  Online-Software-Verzeichnisse gedacht und soll die dezentrale\n\t  Angabe von Projekt-Beteiligungen ermöglichen.\n\t",
+    "ru": "\n\t  DOAP (Описание проекта = Description of a Project) - это схема\n\t  RDF и набор инструментов для описания коллективных проектов\n\t  разработки программного обеспечения. Она предназначена для\n\t  использования в качестве схемы обмена данными между каталогами\n\t  программного обеспечения и для децентрализированного выражения\n\t  участвия в проектах.\n\t",
+    "es": "\n\t  DOAP (Description of a Project / Descripcin de un proyecto) es\n\t  un vocabulario RDF y un conjunto de herramientas para describir\n\t  proyectos de software comunitarios.  Apunta a ser un vocabulario\n\t  de intercambio para directorios de proyectos de software, y para\n\t  permitir descentralizar la forma de expresar el grado de\n\t  involucramiento en un proyecto.\n\t",
+    "fr": "\n\t  DOAP (Description of a Project/Description d'un projet) est un\n\t  vocabulaire RDF et un jeu d'outils associés décrivant des\n\t  projets communautaires de développement de logiciels. Il est\n\t  conçu pour constituer un vocabulaire d'échange entre sites\n\t  annuaires de logiciels et pour permettre la décentralisation des\n\t  informations de participation à un projet.\n\t",
+    "en": "\n\t  DOAP (Description of a Project) is an RDF vocabulary and\n\t  associated set of tools for describing community-based software\n\t  projects.  It is intended to be an interchange vocabulary for\n\t  software directory sites, and to allow the decentralized\n\t  expression of involvement in a project.\n\t",
+    "lv": "\n\t  DOAP (Projekta apraksts = Description of a Project) ir RDF\n\t  vārdnīca un to atbalstošo rīku kopums, kas domāti, lai\n\t  aprakstītu kolektīvus programmatūras projektus. Tās nolūks ir\n\t  kalpot par datu apmaiņas vārdnīcu programmatūras direktoriju\n\t  serveriem un ļaut decentralizētā veidā izteikt dalību projektā.\n\t"
+  },
+  "doap:homepage": "http://usefulinc.com/doap",
+  "doap:license": "http://spdx.org/licenses/GPL-2.0+",
+  "doap:mailing-list": "http://lists.usefulinc.com/mailman/listinfo/doap-interest",
+  "doap:maintainer": [
+    {
+      "@type": "foaf:Person",
+      "foaf:homepage": "https://github.com/kjetilk/",
+      "foaf:name": "Kjetil Kjernsmo"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:homepage": "https://github.com/ewilderj/",
+      "foaf:name": "Edd Wilder-James"
+    }
+  ],
+  "doap:name": "DOAP",
+  "doap:release": {
+    "@type": "doap:Version",
+    "doap:created": "2005-07-12",
+    "doap:name": "unstable",
+    "doap:revision": "0.1"
+  },
+  "doap:repository":     {
+    "@type": "doap:GitRepository",
+    "doap:browse": "https://github.com/ewilderj/doap/",
+    "doap:location": "https://github.com/ewilderj/doap.git"
+  },
+  "doap:shortdesc": {
+    "lv": "\n\t  Rīki un vārdnīca, lai aprakstītu kolektīvus programmatūras\n\t  projektus.\n\t",
+    "ru": "\n\t  Инструменты и словарь для описания коллективных проектов разработки\n\t  программного обеспечения.\n\t",
+    "en": "\n\t  Tools and vocabulary for describing community-based\n\t  software projects.\n\t",
+    "es": "\n\t  Vocabulario y herramientas para describir proyectos\n\t  de software comunitarios.\n\t",
+    "de": "\n\t  Werkzeuge und Vokabular zur Beschreibung von verteilten\n\t  Software-Projekten.\n\t",
+    "fr": "\n\t  Des outils et un vocabulaire pour décrire des projets\n\t  communautaires de développement de logiciels. \n\t"
+  },
+  "doap:translator": [
+    {
+      "@type": "foaf:Person",
+      "foaf:mbox": "mailto:balbinus@bonjourlesmouettes.org",
+      "foaf:name": "Vincent Tabard",
+      "rdfs:seeAlso": "http://foaf.balbinus.net/"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:mbox": "mailto:jsf@ciencias.unam.mx",
+      "foaf:name": "Jorge Santos"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:mbox": "mailto:heiko.ronsdorf@rwth-aachen.de",
+      "foaf:name": "Heiko Ronsdorf"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:mbox": "mailto:josef.petrak@kyberie.cz",
+      "foaf:name": "Josef Petrák"
+    }
+  ]
+}
