@@ -11,7 +11,7 @@ Homepage: [DOAP wiki](https://github.com/ewilderj/doap/wiki)
 Maintainers are:
 
 * Edd Wilder-James [ewilderj](https://github.com/ewilderj)
-* Kjetiol Kjernsmo [kjetilk](https://github.com/kjetilk)
+* Kjetil Kjernsmo [kjetilk](https://github.com/kjetilk)
 
 ## Schema
 
