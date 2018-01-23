@@ -772,7 +772,7 @@
 	<rdfs:label xml:lang="es">lenguaje de programación</rdfs:label>
 	<rdfs:label xml:lang="de">Programmiersprache</rdfs:label>
 	<rdfs:label xml:lang="cs">programovací jazyk</rdfs:label>
-	<rdfs:label xml:lang="en">linguagem de programação</rdfs:label>
+	<rdfs:label xml:lang="pt">linguagem de programação</rdfs:label>
 	<rdfs:comment xml:lang="en">Programming language a project is implemented in or intended for use with.</rdfs:comment>
 	<rdfs:comment xml:lang="fr">Langage de programmation avec lequel un projet est implémenté,
 		ou avec lequel il est prévu de l'utiliser.</rdfs:comment>
