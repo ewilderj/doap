@@ -701,6 +701,15 @@
 	<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person" />
 </rdf:Property>
 
+<rdf:Property rdf:about="http://usefulinc.com/ns/doap#security-contact">
+	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
+	<rdfs:label xml:lang="en">security contact</rdfs:label>
+	<rdfs:comment xml:lang="en">The Agent that should be contacted
+	if security issues are found with the project.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://usefulinc.com/ns/doap#Project" />
+	<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent" />
+</rdf:Property>
+
 <rdf:Property rdf:about="http://usefulinc.com/ns/doap#documenter">
 	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
 	<rdfs:label xml:lang="en">documenter</rdfs:label>
