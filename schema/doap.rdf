@@ -298,6 +298,14 @@
 	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/homepage" />
 </rdf:Property>
 
+<rdf:Property rdf:about="http://usefulinc.com/ns/doap#security-policy">
+	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
+	<rdfs:label xml:lang="en">security policy</rdfs:label>
+	<rdfs:comment xml:lang="en">URL of the security policy of a project.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://usefulinc.com/ns/doap#Project" />
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/page" />
+</rdf:Property>
+
 <rdf:Property rdf:about="http://usefulinc.com/ns/doap#created">
 	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
 	<rdfs:label xml:lang="en">created</rdfs:label>
