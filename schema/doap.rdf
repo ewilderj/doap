@@ -31,7 +31,7 @@
 	<dc:description xml:lang="pt">Vocabulário de descrição de um Projeto (DOAP - Description of a Project), descrito no esquema (schema) W3C RDF e na Web Ontology Language.</dc:description>
 	<dc:creator>Edd Wilder-James</dc:creator>
 	<dc:format>application/rdf+xml</dc:format>
-	<dc:rights>Copyright © 2004-20017 Edd Dumbill, Edd Wilder-James</dc:rights>
+	<dc:rights>Copyright © 2004-2018 Edd Dumbill, Edd Wilder-James</dc:rights>
 
 	<foaf:maker>
 		<foaf:Person>
