@@ -47,7 +47,7 @@
 	  участвия в проектах.
 	"""@ru ;
     :homepage <http://usefulinc.com/doap> ;
-    :license <http://spdx.org/licenses/GPL-2.0+> ;
+    :license <http://spdx.org/licenses/Apache-2.0> ;
     :mailing-list <http://lists.usefulinc.com/mailman/listinfo/doap-interest> ;
     :maintainer [
         a foaf:Person ;
