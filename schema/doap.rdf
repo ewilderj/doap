@@ -658,6 +658,15 @@
 	<rdfs:domain rdf:resource="http://usefulinc.com/ns/doap#Project" />
 </rdf:Property>
 
+<rdf:Property rdf:about="http://usefulinc.com/ns/doap#documentation">
+	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
+	<rdfs:label xml:lang="en">documentation</rdfs:label>
+	<rdfs:label xml:lang="fr">aide</rdfs:label>
+	<rdfs:comment xml:lang="en">Documentation of the project.</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Aide pour l’utilisation de ce projet.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://usefulinc.com/ns/doap#Project" />
+</rdf:Property>
+
 <rdf:Property rdf:about="http://usefulinc.com/ns/doap#screenshots">
 	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
 	<rdfs:label xml:lang="en">screenshots</rdfs:label>
