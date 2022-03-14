@@ -17,7 +17,7 @@ doap.rng: doap.rnc
 	trang -I rnc -O rng doap.rnc doap.rng
 
 validator.exe: $(SRCS) ../schema/doap.rdf doap.rng
-	$(CSC) -g -o validator.exe $(SRCS) -r:Redland.dll \
+	$(CSC) -debug -out:validator.exe $(SRCS) -r:Redland.dll \
 		-resource:../schema/doap.rdf,doap.rdf \
 		-resource:doap.rng,doap.rng \
 		-r:Commons.Xml.Relaxng

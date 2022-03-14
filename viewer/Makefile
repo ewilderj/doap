@@ -14,7 +14,7 @@ clean:
 	rm $(EXES)
 
 viewer.exe: $(SRCS) ../schema/doap.rdf style.xsl
-	$(CSC) -g -o viewer.exe $(SRCS) -r:Redland.dll \
+	$(CSC) -debug -out:viewer.exe $(SRCS) -r:Redland.dll \
 		-resource:../schema/doap.rdf,doap.rdf \
 		-resource:style.xsl,style.xsl
 
