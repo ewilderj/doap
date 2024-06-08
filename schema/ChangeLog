@@ -1,3 +1,11 @@
+2020-04-03  Edd Wilder-James  <https://github.com/ewilderj>
+
+	* doap.rdf: Add documentation-property
+
+2018-02-22  Edd Wilder-James  <https://github.com/ewilderj>
+
+	* doap.rdf: add security-contact property
+
 2017-08-09  Edd Wilder-James <https://github.com/ewilderj>
 
 	* doap.rdf: updated copyright message to include my new name!
@@ -42,4 +50,3 @@
 
 	* doap.rdf: fixed rdfs:Property to be rdf:Property
 	fix from Benjamin Nowack to get the domain right for doap:module
-	
