@@ -419,6 +419,16 @@
 	<rdfs:range rdf:resource="http://rdfs.org/sioc/ns#Container" />
 </rdf:Property>
 
+<rdf:Property rdf:about="http://usefulinc.com/ns/doap#logo">
+	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
+	<rdfs:label xml:lang="en">project logo</rdfs:label>
+	<rdfs:label xml:lang="fr">logo du projet</rdfs:label>
+	<rdfs:comment xml:lang="en">An image for quickly identifying this project.</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Une image permettant d’identifier rapidement ce projet.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://usefulinc.com/ns/doap#Project" />
+	<rdfs:range rdf:resource="http://rdfs.org/sioc/ns#Container" />
+</rdf:Property>
+
 
 <rdf:Property rdf:about="http://usefulinc.com/ns/doap#category">
 	<rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap#" />
